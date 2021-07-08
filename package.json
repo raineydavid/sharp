@@ -64,7 +64,8 @@
     "react-transition-group": "^4.4.1",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-react": "^5.0.0",
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.2",
+    "@duik/it":"^0.6.0"
   },
   "browserslist": [
     ">0.2%",
