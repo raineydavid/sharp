@@ -1,0 +1,210 @@
+stackbitVersion: ~0.3.0
+dataDir: packages
+models:
+  now:
+    type: data
+    label: Now
+    file: docs/now.json
+    fields:
+      - type: number
+        name: version
+        label: Version
+        subtype: int
+      - type: string
+        name: name
+        label: Name
+      - type: list
+        name: alias
+        label: Alias
+        items:
+          type: string
+      - type: list
+        name: builds
+        label: Builds
+        items:
+          type: object
+          fields:
+            - type: string
+              name: src
+              label: Src
+            - type: string
+              name: use
+              label: Use
+      - type: list
+        name: routes
+        label: Routes
+        items:
+          type: object
+          fields:
+            - type: string
+              name: src
+              label: Src
+            - type: object
+              name: headers
+              label: Headers
+              fields:
+                - type: string
+                  name: cache-control
+                  label: Cache Control
+            - type: string
+              name: dest
+              label: Dest
+  manifest:
+    type: data
+    label: Manifest
+    file: docs/public/manifest.json
+    fields:
+      - type: string
+        name: short_name
+        label: Short Name
+      - type: string
+        name: name
+        label: Name
+      - type: list
+        name: icons
+        label: Icons
+        items:
+          type: object
+          fields:
+            - type: string
+              name: src
+              label: Src
+            - type: string
+              name: sizes
+              label: Sizes
+            - type: string
+              name: type
+              label: Type
+      - type: string
+        name: start_url
+        label: Start Url
+      - type: string
+        name: display
+        label: Display
+      - type: string
+        name: theme_color
+        label: Theme Color
+      - type: string
+        name: background_color
+        label: Background Color
+  tsconfig:
+    type: data
+    label: Tsconfig
+    file: docs/tsconfig.json
+    fields:
+      - type: string
+        name: extends
+        label: Extends
+      - type: object
+        name: compilerOptions
+        label: Compiler Options
+        fields:
+          - type: string
+            name: baseUrl
+            label: Base Url
+          - type: string
+            name: target
+            label: Target
+          - type: list
+            name: lib
+            label: Lib
+            items:
+              type: string
+          - type: boolean
+            name: allowJs
+            label: Allow Js
+          - type: boolean
+            name: skipLibCheck
+            label: Skip Lib Check
+          - type: boolean
+            name: esModuleInterop
+            label: Es Module Interop
+          - type: boolean
+            name: allowSyntheticDefaultImports
+            label: Allow Synthetic Default Imports
+          - type: boolean
+            name: strict
+            label: Strict
+          - type: boolean
+            name: forceConsistentCasingInFileNames
+            label: Force Consistent Casing In File Names
+          - type: string
+            name: module
+            label: Module
+          - type: string
+            name: moduleResolution
+            label: Module Resolution
+          - type: boolean
+            name: resolveJsonModule
+            label: Resolve Json Module
+          - type: boolean
+            name: isolatedModules
+            label: Isolated Modules
+          - type: boolean
+            name: noEmit
+            label: No Emit
+          - type: string
+            name: jsx
+            label: Jsx
+      - type: list
+        name: include
+        label: Include
+        items:
+          type: string
+  tsconfig_1:
+    type: data
+    label: Tsconfig 1
+    file: tsconfig.json
+    fields:
+      - type: object
+        name: compilerOptions
+        label: Compiler Options
+        fields:
+          - type: string
+            name: target
+            label: Target
+          - type: list
+            name: lib
+            label: Lib
+            items:
+              type: string
+          - type: boolean
+            name: skipLibCheck
+            label: Skip Lib Check
+          - type: boolean
+            name: allowSyntheticDefaultImports
+            label: Allow Synthetic Default Imports
+          - type: string
+            name: module
+            label: Module
+          - type: boolean
+            name: noImplicitAny
+            label: No Implicit Any
+          - type: string
+            name: moduleResolution
+            label: Module Resolution
+          - type: boolean
+            name: resolveJsonModule
+            label: Resolve Json Module
+          - type: boolean
+            name: strictNullChecks
+            label: Strict Null Checks
+          - type: boolean
+            name: declaration
+            label: Declaration
+          - type: boolean
+            name: noEmit
+            label: No Emit
+          - type: string
+            name: jsx
+            label: Jsx
+          - type: list
+            name: typeRoots
+            label: Type Roots
+            items:
+              type: string
+      - type: list
+        name: exclude
+        label: Exclude
+        items:
+          type: string

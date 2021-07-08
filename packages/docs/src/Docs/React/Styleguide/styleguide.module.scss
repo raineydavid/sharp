@@ -1,0 +1,16 @@
+.colorSchemeGrid,
+.colorSchemeGridSmall {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  & > * {
+    flex-basis: calc(33% - 30px);
+    margin: 10px 15px;
+  }
+}
+.colorSchemeGridSmall {
+  & > * {
+    flex-basis: calc(20% - 30px);
+    margin: 10px 15px;
+  }
+}

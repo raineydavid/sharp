@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src", // This must be specified if "paths" is.
+    "paths": {
+      "components": [
+        "components"
+      ],
+      "components/*": [
+        "components/*"
+      ],
+      "Docs/*": [
+        "Docs/*"
+      ],
+      "helpers/*": [
+        "helpers/*"
+      ],
+      "helpers": [
+        "helpers"
+      ],
+      "composed/*": [
+        "composed/*"
+      ],
+      "composed": [
+        "composed"
+      ],
+      "hooks/*": [
+        "hooks/*"
+      ],
+      "hooks": [
+        "hooks"
+      ],
+      "assets": [
+        "assets"
+      ]
+    }
+  }
+}
